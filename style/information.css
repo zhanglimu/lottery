@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0; padding:0; }
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, form, p, img { margin:0; padding:0; }
+html, body {background:#fff;;color:#000; line-height:22px; font:100 14px/1.8 '微软雅黑',Arial, Helvetica, sans-serif; }
+ul li, li {list-style:none;}
+select, input, img { vertical-align:middle; font-size:14px;}
+img { border:none; }
+table { padding:0px; margin:0px; }
+a{text-decoration: none;}
+
+
+
+/*账户信息*/
+#main{
+	 padding:20px 0; background: #faf2cd;
+}
+
+#top{
+	text-align: center; background: #f65a5b; width: 100%; height:58px; line-height: 58px; font-size: 22px; color: #fff;
+}
+#top a{
+	color: #fff; font-size: 18px;
+}
+#point{
+	float: left;
+} 
+#pointe{
+	float: right;
+}
+#tib h5,#submit h5,#submit p{ padding-left: 20px;}
+#tib{
+	font-size: 16px; text-align: left;
+}
+form{
+	text-align: center;
+}
+form p{
+	border-bottom: 1px solid #999; background: #fff;
+}
+input {
+	color: #999; width: 50%; height: 30px; border:none;
+}
+form p span{
+	display: inline-block; text-align: right; width: 40%
+}
+select{
+	color: #999; width: 50%; height: 30px; border:none;
+}
+#submit input{
+	width: 90%; height: 40px; text-align: center; margin: 10px 16px; background:#f65a5b; color: #fff; border: none; border-radius: 5px;
+	-webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+#submit p{
+	font-size: 12px;
+}

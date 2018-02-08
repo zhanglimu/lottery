@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>订单详情</title>
+    <meta name="description" content="&lt;%=_Site.Name%&gt;">
+    <meta name="keywords" content="&lt;%=_Site.Name%&gt;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    
+</head>
+<style type="text/css">
+html, body { margin:0;padding:0; background:#fff;;color:#000; font-family: "Microsoft YaHei";}
+
+#top{
+    text-align: center; font-size:18px;width: 100%;height:58px; line-height:58px;
+     color: #fff; background:#e85859; 
+}
+#top span{font-size: 20px;}
+</style>
+
+<body>
+
+    <header id="top">
+        <a id="point" href="all_detail.html"><img style="float:left;width:20px; height:20px;margin:20px 0 0 20px;" src="image/refres.png"></a>
+        <span>订单详情</span>
+        <a id="pointe" href="#"><img style=" float:right;width:20px; height:20px;margin:20px 20px 0 0;" src="image/icon.png"></a>
+    </header>
+    <article>
+        <section class="lottery_bettingSucc" ng-controller="orderController" ng-model="order">
+            <input type="hidden" id="betId" value="${betId}"/>
+
+            <div class="lottery_type">
+                <b id="lotteryName">竞彩足球</b>
+                <span>第 <b id="issueName">2015001</b> 期</span>
+            </div>
+            <div class="orderinfol">
+                <ul>
+                    <li><span>订单金额</span><i id="schemeMoney" ng-bind="order.betAmount">45</i></li>
+                    <li><span>订单状态</span><i id="schemeState" ng-bind="order.status">20</i></li>
+                    <li><span>奖金</span><i id="winMoney" ng-bind="order.winMoney">15</i></li>
+                </ul>
+            </div>
+
+            <div class="numinfo_summary" style=" font-size:12px; line-height:30px; text-align:center;">选号详情
+
+                <b id="schemeMultiple" ng-bind="order.passType">123</b>
+                <span>123</span>
+            </div>
+            <div class="orderdateinfo">
+
+                <table class="infotable" id="matchTable" style="" border="0" cellspacing="1">
+                    <tbody>
+                    <tr>
+                        <th class="chanc">场次</th>
+                        <th class="duiwu">主队VS客队</th>
+                        <th class="wanfa">玩法</th>
+                        <th class="touzh">投注</th>
+                        <th class="saigu">赛果</th>
+                    </tr>
+                    </tbody>
+                    <tbody id="matchList">
+                    <tr ng-repeat="subBet in order.subBets">
+                        <td ng-bind="subBet.matchCode">123</td>
+                        <td>
+                            <i ng-bind="subBet.homeTeam">123</i>
+                            <b>VS</b>
+                            <i ng-bind="subBet.awayTeam">123</i>
+                        </td>
+                        <td>
+                            <table class="playTypeTable" height="100%" border="0" cellspacing="1" width="100%">
+                                <tbody>
+                                <tr style="height:40px;" ng-repeat="betItem in subBet.betItems">
+                                    <td style="padding: 5px 0px; border: 0px none;" ng-bind="betItem.playType">123</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table border="0" cellspacing="1" width="100%">
+                                <tbody>
+                                <tr ng-repeat="betItem in subBet.betItems">
+                                    <td style="padding:5px 0px;">
+                                        <span ng-bind="betItem.item">123</span><br/>
+                                        <span style="color:blue" ng-bind="betItem.odds">123</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td><span ng-bind="subBet.result">123</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan=5  style="color:#999;"><span>下单时间：</span><span>123456789</span>&nbsp&nbsp&nbsp&nbsp&nbsp<span>订单编号：</span><span>12345679</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p style="color:#e85859;"><span>温馨提示：</span><i>单注中奖金额大于1万元，会有专人和您联系；中奖金额小于1万元，直接打到您的购彩账户。</i></p>
+                <!-- <dl>
+                    <dt>下单时间：</dt>
+                    <dd id="buyDateTime" ng-bind="order.createTime">12324546488</dd>
+                </dl>
+                <dl>
+                    <dt>订单编号：</dt>
+                    <dd id="orderNumber" ng-bind="order.betId">1234567899</dd>
+                </dl>
+                <dl style="color:#e85859;">
+                    <dt>温馨提示：</dt>
+                    <dd>单注中奖金额大于1万元，会有专人和您联系；中奖金额小于1万元，直接打到您的购彩账户。</dd>
+                </dl> -->
+
+                <div style=" clear:both; height:60px;"></div>
+            </div>
+            <div class="lotterydate">
+                <input type="hidden" ng-model="order.status"/>
+
+                <div class="lotterybut butssq" id="btnBuy" ng-click="changeStatus(order)"
+                     style="background: rgb(232, 88, 89) none repeat scroll 0% 0%; color: rgb(255, 255, 255); text-align: center; line-height: 48px; width: 100%;">
+                    <span ng-bind="order.status">申请领票</span>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <style type="text/css">
+        * {
+            font-size: 12px;
+        }
+        a{
+            text-decoration: none;
+        }
+        p i,li i{font-style: normal;}
+        ul li{ list-style: none;}
+        #top{
+    text-align: center; background: #f65a5b; width: 100%; height:58px; line-height: 58px; font-size: 22px;
+     color: #fff; 
+}
+#top a{
+    color: #fff; font-size: 18px;
+}
+.orderinfol ul{height: 50px; width:100%;border-bottom:1px solid #d2d2d2;margin:0; padding: 0px;}
+.orderinfol li{ float: left; width: 33%; text-align: center;/* border-right:1px solid #d2d2d2;*/ height: 50px;}
+.orderinfol li span{display: block; color: #999; line-height: 20px;}
+.orderinfol li i{display: block; line-height: 20px;color: #e85859;}
+
+        .lottery_type {
+            height: 53px;
+            border-bottom: 1px solid #d2d2d2;
+            line-height: 53px;
+            /*padding: 0 0 0 10px;*/
+            font-size: 16px;
+            color: #333333;
+            padding: 0 0 0 30px;
+            position: relative;
+
+        }
+
+        .lotteryimg {
+            position: absolute;
+            width: 47px;
+            height: 47px;
+            left: 3px;
+            top: 3px;
+        }
+
+        .infotable {
+            background: #d2d2d2;
+            width: 98%;
+            margin: 10px auto;
+        }
+
+        th {
+            background: #faf2cd;
+            height: 25px;
+            text-align: center;
+            color: #333;
+        }
+
+        td {
+            background: #fff;
+            height: 25px;
+            text-align: center;
+        }
+
+        .chanc {
+            width: 12%;
+        }
+
+        .duiwu {
+            width: 30%;
+        }
+
+        .wanfa {
+            width: 20%;
+        }
+
+        .touzh {
+            width: 20%;
+        }
+
+        .saigu {
+            width: 15%;
+        }
+
+        td i, td b {
+            display: block;
+            font-style: normal;
+        }
+
+        table {
+            text-align: center;
+        }
+    </style>
+
+
+    
+
+<div id="e_popup" data-toast="true"></div>
+<div id="e_popup_mask" class="e_popup_mask"></div>
+<div id="E_toast"></div>
+<script>
+    window.onload = function () {
+        E.launch();
+    }
+    var orderModule = angular.module('orderApp', []);
+    orderModule.controller('orderController', function ($scope, $http) {
+        $http.get('orderDetail.do?betId=' + $("#betId").val())
+                .success(function (response) {
+                    $scope.order = response;
+                });
+        $scope.changeStatus = function (order) {
+            if (order.status == '未出票') {
+                if ($scope.isBusy) {
+                    alert('正在出票...');
+                    return;
+                }
+                order.isBusy = true;
+                $.post("printOutScheme.do", {
+                    "siteId": 1,
+                    "betId": order.betId,
+                    "buyOperatorId": 1,
+                    "printOutType": 1,
+                    "identifiers": "1",
+                    "isOt": false
+                }, function (data) {
+                    if (data.value == 0) {
+                        E.showToast("出票成功", "50%", "error", "1000");
+                    } else {
+                        E.showToast(data.desc, "50%", "error", "1000");
+                    }
+                    order.status = '已出票';
+                });
+                $scope.isBusy = false;
+            }
+        }
+    });
+</script>
+</body>
+</html>

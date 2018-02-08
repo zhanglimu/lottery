@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0; padding:0; }
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, form, p, img { margin:0; padding:0; }
+html, body {background:#fff;;color:#000; line-height:22px;font-family: "Microsoft YaHei";font-size: 62.5%; /*font:100 14px/1.8 '微软雅黑',Arial, Helvetica, sans-serif;*/ }
+ul li, li {list-style:none;}
+select, input, img { vertical-align:middle; font-size:14px;}
+img { border:none; }
+body a{ text-decoration: none; color: #000;}
+table { padding:0px; margin:0px; }
+
+/*胜负平*/
+/*图标 zhu*/
+/* span{
+ 	float: right; height:40px; width:40px; display:block; position:relative;
+ }  
+
+.demoSpan1{
+	width:40px; height:40px; display:block;
+}
+
+.demoSpan1:before{
+	content:''; height:20px; width:24px; display:block; border:2px #fff solid; border-top:0; position:absolute; top:15px; left:5px;
+}
+
+.demoSpan1:after{
+	content:''; height:8px; width:6px; display:block; position:absolute; top:25px; left:15px; border:2px solid #fff;
+}
+
+.demoSpan2:before{
+	content:''; height:10px; width:2px; display:block; position:absolute; top:3px; left:28px; background:#fff;
+}
+
+.demoSpan2:after{
+	content:''; height:24px; width:23px; border-top:2px #fff solid; border-right:2px #fff solid; position:absolute; 
+top:4px; left:6px; transform:scale(1,0.8) rotate(-45deg);-webkit-transform:scale(1,0.8) rotate(-45deg);-moz-transform:scale(1,0.8) rotate(-45deg);
+-o-transform:scale(1,0.8) rotate(-45deg);-ms-transform:scale(1,0.8) rotate(-45deg);
+}
+
+
+fanhui
+
+
+.demoSpan3{
+	overflow:hidden; height:30px; float: left;
+}
+
+.demoSpan3:before{
+	content:''; height:15px; width:15px; display:block; border:2px solid #fff; border-right-width:0;
+ border-bottom-width:0; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);
+ -o-transform:rotate(-45deg);-ms-transform:rotate(-45deg); position:absolute; top:5px; left:5px;
+}
+
+ .demoSpan3:after{
+ 	content:''; height:2px; width:30px; display:block; background:#fff; position:absolute; top:12px; left:5px;
+ }
+图标end
+*/
+section #fix-both a{
+	display: block; float: left;
+}
+
+#main{
+	/*padding: 0px 20px;*/
+}
+#accordion{ background: #faf2cd;}
+/*#top{
+	text-align: center; background: #f65a5b; width: 100%; height:58px; line-height: 58px; font-size: 22px;
+	 color: #fff; 
+}*/
+/*#top a{
+	 color: #fff; font-size: 18px;
+}
+#point{
+	float: left; margin-left :35px;
+} 
+#pointe{
+	float: right; margin-right :35px;
+}*/
+#navv{
+	border-bottom: 1px solid #999; height: 38px; clear: both;
+}
+#nav{
+	width: 50%; float: left; line-height: 38px; text-align: center;
+}
+#nav .Selected,#nav a:hover{
+	display: block; height: 38px; border-bottom: 3px solid #e85859; color: #e85859;
+}
+
+section #invisible{
+	 margin-left:10px;display: block; background:#4e4d4d; border-bottom: 1px solid #999;
+	filter:alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity: 0.9; opacity: 0.9; 
+	color:#fff; clear: both;
+}
+/*#nav_list{
+	 height:40px; line-height: 40px; padding-left: 20px; border-bottom: 1px solid #999;
+}
+#nav_list li{
+	float: left; width: 15%; text-align: center; overflow: hidden;
+	white-space: nowrap; text-overflow:ellipsis;
+}*/
+
+#list dd{
+	border-bottom: 1px solid #999;
+}
+#list dt{
+	padding-left: 20px;
+	height: 40px; line-height: 40px;
+}
+#invisible li{ text-align: center;}
+#invisible .events{
+	width: 20%; height: 80px; border-right: 1px solid #999; float: left;
+}
+#invisible ul li .events span{
+	padding-top: 10px;
+}
+#invisible ul li .events span,
+#invisible ul li .events i,
+#invisible ul li .events b {
+    display: block;
+  	line-height: 20px;
+  	font-size: 12px;
+  	font-weight: normal;
+}
+#invisible .events_list{
+	padding-left: 25%; height: 80px;
+}
+#invisible .events_list .eventsvs{
+	width: 90%; height: 38px;
+}
+.events_list .eventsvs .ab,
+.events_list .eventsvs .ac,
+.events_list .eventsvs .ad {
+ 	float: left;
+ 	width: 33.3%;
+ 	font-size: 12px;
+  	line-height: 38px; 
+  	overflow: hidden;
+	height: 36px;
+}
+#invisible .eventsnum{
+	padding-right: 9%;
+}
+#invisible .eventsnum a {
+	cursor: pointer;
+	display: block;
+	color: #fff;
+    width: 31%;
+  	float: left;
+  	height: 30px;
+  	margin-bottom: 10px;
+  	font-size: 12px;
+  	line-height: 30px;
+  	margin-right: 2px;
+}
+/*#invisible .eventsnum a.zhuwin{display: block; background:#e85859; color: #000;}*/
+.active{background-color:#e85859!important;color: #000!important;}
+
+/*#invisible .eventsnum a:hover{
+	background:#e85859; color: #000;
+}*/
+
+.eventsnum span i{font-style:normal; padding-left: 10px; font-weight: bold;}
+.eventsnum .zhuwin,
+.eventsnum .eventp,
+.eventsnum .kewin{
+	background:#55b5ad; border:none; border-radius: 5px; -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+#footer{
+	width: 100%;
+  height: 46px;
+  line-height: 46px;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  background: #fff;
+  border-top: 1px solid #999;
+}
+#footer .but{
+	width: 20%;
+	float: left;
+	text-align: center;	
+}
+#footer .but a{
+	display: block;
+  width: 90%;
+  padding: 0;
+  height: 36px;
+  margin:5px 0px 0px 10px;
+  line-height: 36px;
+  text-align: center;
+  background: #e85859;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+#footer span{
+	width: 55%;
+	float: left;
+	text-align: center;
+}
+
+
+
+/*半全场弹出框*/
+#invisible .eventsbet input {
+	cursor: pointer;
+	display: block;
+	color: #fff;
+    width: 90%;
+  	float: left;
+  	height: 30px;
+  	font-size: 12px;
+  	line-height: 30px;
+  	margin-right: 2px;
+}
+.eventsbet input {
+	background:#55b5ad; border:none; border-radius: 5px; -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+/*#invisible .eventsbet a:hover{
+	background:#e85859; color: #000;
+}
+*/
+/*弹出框*/
+.black_overlay{
+display: none;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.white_content {
+display: none;
+position: absolute;
+top: 10%;
+left: 10%;
+width: 80%;
+height: 80%;
+/*border: 16px solid lightblue;*/
+padding: 20px;
+background-color: white;
+z-index:1002;
+overflow: auto;
+}
+
+.optionshead{ padding-bottom: 20px; font-size: 14px; font-weight: bold;}
+table td{
+	height: 25px; font-size: 12px; line-height: 25px;
+}
+.betting_options p{ font-size: 12px; color: #e85859; padding: 20px 0; }
+.optionsbut input{
+	border: none; width: 30%; height: 25px; border-radius: 5px; -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+.optionsbut .cancel{
+	float: left; background: #e85859;
+}
+.optionsbut .okbtn{
+	float: right; background: #55b5ad;
+}
+
+
+
+/*比分*/
+.betting_options #menu{width: 100%; padding: 15px;}
+.betting_options #menu li{width: 32%;
+	border-top: 1px solid #999; line-height:30px;text-align:center;
+	margin:1px;cursor:pointer;float:left;padding:0 15px;
+}
+
+.betting_options #menu li.se{background:#55b5ad;font-weight:bold;}
+.betting_options #content{clear:both;width:100%;padding:15px;}
+
+/*总进球数行间样式*/
+/*混合过关行间样式*/
+/*daohang*/
+ #tlmenu{width: 100%; padding: 10px;}
+ #tlmenu li{width: 15%;
+	border-top: 1px solid #999; line-height:30px;text-align:center;
+	margin:1px;cursor:pointer;float:left;
+}
+
+/*投注成功页面css*/
+
+

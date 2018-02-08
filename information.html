@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>账户信息-[caiEX]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="style/information.css">
+<style type="text/css">
+html, body {background:#fff;;color:#000; font-family: "Microsoft YaHei";}
+
+#top{
+    text-align: center; font-size:18px;width: 100%;height:58px; line-height:58px;
+     color: #fff; background:#e85859; 
+}
+</style>
+
+<body>
+
+    <header id="top">
+        <a id="point" href="user.html"><img style="float:left;width:20px; height:20px;margin:20px 0 0 20px;" src="image/refres.png"></a>
+        <span>账户信息</span>
+        <a id="pointe" href="#"><img style=" float:right;width:20px; height:20px;margin:20px 20px 0 0;" src="image/icon.png"></a>
+    </header>
+<article id="main">
+	<div id="tib"><h5>账户信息</h5></div>
+	<form method="post">
+		<p><span>手机号码：</span><input name="Phonenumber" type="text"/></p>
+		<p><span>用户名：</span><input name="username" type="text"/></p>
+	</form>
+	<div id="tib"><h5>投注方案</h5></div>
+	<form>
+		<p><span>指定投注店：</span>
+			<select>
+					<option value="-1">请选择投注店</option>
+					<option value="1">朝阳店</option>
+					<option value="2">华威店</option>
+					<option value="3">怀柔</option>
+					<option value="4">圆明园</option>
+			</select>
+		</p>
+		<p><span>投注店编号：</span><input name="Betting" type="text" value="请输入编号"/></p>
+	</form>
+	<div id="tib"><h5>个人资料</h5></div>
+	<form>
+		<p><span>真实姓名：</span><input name="realname" type="text" value="请输入真实姓名"/></p>
+		<p><span>身份证号：</span><input name="idnumber" type="text" value="请输入身份证号"/></p>
+		<p><span>开户支行：</span><input name="branch" type="text" value="请输入开户支行&nbsp如：北京海淀花园路"/></p>
+		<p><span>银行卡号：</span><input name="cardnumber " type="text" value="请输入银行卡号"/></p>
+		<p><span>银行名称：</span>
+			<select>
+					<option value="-1">请选择银行</option>
+					<option value="1">中国工商银行</option>
+					<option value="2">中国工商银行</option>
+					<option value="3">中国工商银行</option>
+					<option value="4">中国工商银行</option>
+					<option value="5">中国工商银行</option>
+					<option value="6">中国工商银行</option>
+					<option value="7">中国工商银行</option>
+					<option value="8">中国工商银行</option>
+			</select>
+		</p>
+		<p><span>开户地点：</span>
+			<select>
+					<option value="-1">请先选择银行</option>
+					<option value="1">海淀</option>
+					<option value="2">朝阳</option>
+					<option value="3">怀柔</option>
+					<option value="4">圆明园</option>
+			</select>
+			<span></span>
+			<select>
+					<option value="-1">请选择城市</option>
+					<option value="1">唐山</option>
+					<option value="2">朝阳</option>
+					<option value="3">怀柔</option>
+					<option value="4">圆明园</option>
+			</select>
+		</p>
+	</form>
+
+	<div id="tib"><h5>安全问题</h5></div>
+	<form>
+		<p><span>安全问题：</span>
+			<select>
+					<option value="-1">请选择安全问题</option>
+					<option value="1">你爸爸叫什么？</option>
+					<option value="2">你妈妈手机号是多少？</option>
+					<option value="3">怀柔</option>
+					<option value="4">圆明园</option>
+			</select>
+		</p>
+		<p><span>答案：</span><input name="answer" type="text" value="请输入答案"/></p>
+	</form>
+	<div id="submit">
+		<input type="submit" value="提交"/>
+		<h5>温馨提示：</h5>
+		<p>1：用户名以及手机号码是你唯一登陆的凭证。</p>
+		<p>2：真实姓名须同银行卡户名一致，身份证号码须与银行卡户主身份一致。</p>
+		<p>3：请放心填写真实的个人资料，我们会对你的身份信息进行严格保密。</p>
+		<p>4：以上资料仅用于提款到银行卡，请真实填写否则无法完成提款。</p>
+		<p>5：以上信息一经填写不能轻易修改，请确保填写正确。</p>
+	</div>
+</article>
+</body>
+</head>
+</html>

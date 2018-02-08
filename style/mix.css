@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0; padding:0; }
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, form, p, img { margin:0; padding:0; }
+html, body {background:#fff;;color:#000; line-height:22px; font:100 14px/1.8 '微软雅黑',Arial, Helvetica, sans-serif; }
+ul li, li {list-style:none;}
+select, input, img { vertical-align:middle; font-size:14px;}
+img { border:none; }
+body a{ text-decoration: none; color: #000;}
+table { padding:0px; margin:0px; }
+
+
+section #fix-both a{
+	display: block; float: left;
+}
+
+#main{
+	/*padding: 0px 20px;*/
+}
+#accordion{ background: #faf2cd;}
+#top{
+	text-align: center; /*background: #f65a5b;*/ width: 100%; height:58px; line-height: 58px; font-size: 22px;
+	 color: #fff; 
+}
+#top a{
+	color: #fff; font-size: 18px;
+}
+#point{
+	float: left; margin-left :35px;
+} 
+#pointe{
+	float: right; margin-right :35px;
+}
+#navv{
+	border-bottom: 1px solid #999; height: 38px; clear: both;
+}
+#nav{
+	width: 100%; float: left; line-height: 38px; text-align: center;
+}
+#nav .Selected,#nav a:hover{
+	display: block; height: 38px; border-bottom: 3px solid #e85859; color: #e85859;
+}
+
+section #invisible{
+	display: block; width: 100%; background:#4e4d4d;/* border-bottom: 1px solid #fff;*/
+	filter:alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity: 0.9; opacity: 0.9; 
+	color:#fff; clear: both;
+}
+/*#nav_list{
+	 height:40px; line-height: 40px; padding-left: 20px; border-bottom: 1px solid #999;
+}
+#nav_list li{
+	float: left; width: 15%; text-align: center; overflow: hidden;
+	white-space: nowrap; text-overflow:ellipsis;
+}*/
+
+#list dd{
+	border-bottom: 1px solid #999;
+}
+#list dt{
+	padding-left: 20px;
+	height: 40px; line-height: 40px;
+}
+#invisible li{ text-align: center;}
+#invisible .events{
+	width: 20%; height: 80px; border-right: 1px solid #999; float: left;
+}
+#invisible ul li .events span{
+	padding-top: 10px;
+}
+#invisible ul li .events span,
+#invisible ul li .events i,
+#invisible ul li .events b {
+    display: block;
+  	line-height: 20px;
+  	font-size: 12px;
+  	font-weight: normal;
+}
+#invisible .events_list{
+	/*padding-left: 25%;*/ height: 80px;
+}
+#invisible .events_list{
+	width: 100%; height: 38px;
+}
+.events_list .eventsvs .ab,
+.events_list .eventsvs .ac,
+.events_list .eventsvs .ad {
+ 	float: left;
+ 	width: 20%;
+ 	font-size: 12px;
+  	line-height: 38px; 
+  	overflow: hidden;
+	height: 36px;
+}
+#invisible .eventsnum{
+	/*padding-right: 9%;*/
+}
+#invisible .eventsnum a {
+	cursor: pointer;
+	display: block;
+	color: #fff;
+    width: 20%;
+  	float: left;
+  	height: 30px;
+  	margin-bottom: 10px;
+  	font-size: 12px;
+  	line-height: 30px;
+  	margin-right: 2px;
+}
+/*#invisible .eventsnum a.zhuwin{display: block; background:#e85859; color: #000;}*/
+.active{background-color:#e85859!important;color: #000!important;}
+.active1{background-color:#55b5ad!important;color: #000!important;}
+/*#invisible .eventsnum a:hover{
+	background:#e85859; color: #000;
+}*/
+
+.eventsnum span i{font-style:normal; padding-left: 10px; font-weight: bold;}
+.eventsnum .zhuwin,
+.eventsnum .eventp,
+.eventsnum .kewin{
+	background:#55b5ad; border:none; border-radius: 5px; -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+#footer{
+	width: 100%;
+  height: 46px;
+  line-height: 46px;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  background: #fff;
+  border-top: 1px solid #999;
+}
+#footer .but{
+	width: 20%;
+	float: left;
+	text-align: center;	
+}
+#footer .but a{
+	display: block;
+  width: 90%;
+  padding: 0;
+  height: 36px;
+  margin:5px 0px 0px 10px;
+  line-height: 36px;
+  text-align: center;
+  background: #e85859;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+#footer span{
+	width: 55%;
+	float: left;
+	text-align: center；
+}
+
+
+
+/*半全场弹出框*/
+#invisible .eventsnum input {
+	cursor: pointer;
+	display: block;
+	color: #fff;
+    width: 40%;
+  	float: left;
+  	height: 30px;
+  	font-size: 12px;
+  	line-height: 30px;
+  	/*margin-right: 2px;*/
+  	margin-left: 25%;
+}
+.eventsnum input {
+	background:#55b5ad; border:none; border-radius: 5px; -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+/*#invisible .eventsbet a:hover{
+	background:#e85859; color: #000;
+}
+*/
+/*弹出框*/
+.black_overlay{
+display: none;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.white_content {
+display: none;
+position: absolute;
+top: 10%;
+left: 10%;
+width: 80%;
+/*height: 80%;*/
+/*border: 16px solid lightblue;*/
+/*padding: 20px;*/
+background-color: white;
+z-index:1002;
+overflow: auto;
+}
+
+.optionshead{ padding-bottom: 20px; font-size: 14px; font-weight: bold;}
+table td{
+	height: 25px; font-size: 12px; line-height: 25px;
+}
+.betting_options p{ font-size: 12px; color: #e85859; padding: 20px 0; }
+.optionsbut input{
+	border: none; width: 30%; height: 25px; border-radius: 5px;
+	 -webkit-border-radius: 5px;-moz-border-radius: 5px;-ms-border-radius: 5px;
+}
+.optionsbut .cancel{
+	float: left;margin: 15px; background: #e85859;
+}
+.optionsbut .okbtn{
+	float: right;margin: 15px; background: #55b5ad;
+}
+
+
+
+/*比分*/
+.betting_options #menu{width: 100%; padding: 15px;}
+.betting_options #menu li{width: 100%;
+	border-bottom: 1px solid #999; line-height:30px;text-align:center;
+	margin:1px;cursor:pointer;/*float:left;*/padding:0 15px;
+}
+
+.betting_options #menu li.se{background:#55b5ad;font-weight:bold;}
+.betting_options #content{clear:both;width:100%;padding:15px;}
+
+/*总进球数行间样式*/
+/*混合过关行间样式*/
+ #tlmenu{width: 100%; padding: 10px;}
+ #tlmenu li{width: 15%;
+	border-top: 1px solid #999; line-height:30px;text-align:center;
+	margin:1px;cursor:pointer;float:left;
+}
+.tab .red{ font-weight: bold; padding: 0;margin: 0;}

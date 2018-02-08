@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>选择列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href=" style/two.css">
+<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href=" style/select-list.css">
+<!-- <link rel="stylesheet" type="text/css" href="style/common.css"> -->
+</head>
+<style type="text/css">
+html, body {background:#fff;;color:#000; font-family: "Microsoft YaHei";}
+
+#top{
+    text-align: center; font-size:18px;width: 100%;height:58px; line-height:58px;
+     color: #fff; background:#e85859; 
+}
+</style>
+
+<body>
+
+    <header id="top">
+        <a id="point" href="all.html"><img style="float:left;width:20px; height:20px;margin:20px 0 0 20px;" src="image/refres.png"></a>
+        <span>选择列表</span>
+        <a id="pointe" href="#"><img style=" float:right;width:20px; height:20px;margin:20px 20px 0 0;" src="image/icon.png"></a>
+    </header>
+	<!--<article>
+			<div id="container" data-dialoginit="true"></div>
+			<input name="userid" id="userid" value="18518012239,281561" type="hidden">
+	<article> -->
+	<section class="zqtz lottery_buy_wrap">
+		<div class="chooseracebut">
+			<input id="still" value="继续选择比赛" type="button">
+		</div>
+
+		
+		<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+								<dd id="invisible">
+									<ul>
+										<li style="border-bottom:none;padding:0;">
+											<div class="delbut">
+												<input value="删除" type="button" hidefocus="hidefocus" >
+											</div>
+											<div class="events">
+												<span>天皇杯</span>
+												<b>5015</b>
+												<i>17:55</i>
+											</div>
+											<div class="events_list">
+												<div class="eventsvs">
+													<div class="ab">鹿岛鹿角</div>
+													<div class="ac">VS</div>
+													<div class="ad">FC琉球</div>
+												</div>
+												<div class="eventsnum">
+													<a class="zhuwin">主胜<span>1.11</span></a>
+													<a class="eventp">平<span>6.80</span></a>
+													<a class="kewin">客胜<span>13.50</span></a>
+												</div>
+											</div>
+										</li>
+									</ul>	
+								</dd>
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+								<dd id="invisible">
+									<ul style="height:120px;">
+										<li style="border-bottom:none;padding:0;">
+											<div class="delbut">
+												<input value="删除" type="button" hidefocus="hidefocus" >
+											</div>
+											<div class="events" style="height:120px;">
+												<span style="display: block;line-height: 30px;font-size: 12px;font-weight: normal;">天皇杯</span>
+												<b style="display: block;line-height: 30px;font-size: 12px;font-weight: normal;">5015</b>
+												<i style="display: block;line-height: 30px;font-size: 12px;font-weight: normal;">17:55</i>
+											</div>
+											<div class="events_list">
+												<div class="eventsvs">
+													<div class="ab">鹿岛鹿角</div>
+													<div class="ac">VS</div>
+													<div class="ad">FC琉球</div>
+												</div>
+												<div class="eventsnum">
+													<a class="zhuwin"><span>1.11<i>1.2</i></span></a>
+													<a class="eventp"><span>6.80<i>1.2</i></span></a>
+													<a class="kewin"><span>13.50<i>1.2</i></span></a>
+												</div>
+												<div class="eventsnum">
+													<a class="zhuwin"><span>1.11<i>1.2</i></span></a>
+													<a class="eventp"><span>6.80<i>1.2</i></span></a>
+													<a class="kewin"><span>13.50<i>1.2</i></span></a>
+												</div>
+											</div>
+										</li>
+									</ul>	
+								</dd>
+
+						</div>	
+					</div>
+				</div>
+			</div>
+
+		<div class="buyagreement"><input id="agreement" checked="checked" type="checkbox">我已阅读并同意<a href="###">《用户合买代购协议》</a>
+			<div class="delbut2"><span></span>清空</div>
+		</div>
+		<div class="confirm_buy">
+			<div class="inpnum">
+				<div class="qnum1"><input id="guogchobut" value="过关方式(必选)" type="button"></div>
+				<div class="qnum2">投<input id="num" value="1" style=" text-align:center" onkeyup="value=value.replace(/[^\d]/g,'');numChanges(this);" onchange="numChange(this)" type="text">倍</div>
+			</div>
+			<div class="confirmbut jczcbtn" id="btn">理论奖金 0~0 立即购买 0元</div>
+		</div>
+	</section>
+	<div class="guoguan" id="guoguan">
+		<ul>
+			<li class="curr">自由过关</li>
+			<li>多串过关</li>
+		</ul>
+		<div id="ZYGG" class="guoguancc" style="display:block">
+            <div class="zy"><span>2串1</span></div>
+			<div class="ggbut"><input class="cancel" value="取消" type="button"><input id="confirmzy" class="qued" value="确定" type="button"></div>
+		</div>
+		<div id="DCGG" class="guoguancc">
+            <div class="dc"></div>
+			<div class="ggbut"><input class="cancel" value="取消" type="button"><input id="confirmdc" class="qued" value="确定" type="button"></div>
+		</div>
+	</div>
+	<div class="guoguanmask"></div>
+</body>
+<script src="js/JCBunchPass.js" type="text/javascript"></script>
+<script src="js/jquery-2.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+<script src="js/zepto.js" type="text/javascript"></script>
+<script src="js/EIMS.js" type="text/javascript"></script>
+<script src="js/tz.js" type="text/javascript"></script>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</html>

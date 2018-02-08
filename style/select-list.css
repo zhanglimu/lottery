@@ -1,0 +1,719 @@
+@charset "utf-8";
+/* CSS Document */
+
+.buyagreement {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  padding: 0 0 0 10px;
+}
+.buyagreement a {
+  color: #2d86ca;
+}
+.buyagreement .delbut2 {
+  position: absolute;
+  width: 30px;
+  height: 24px;
+  top: 8px;
+  right: 5px;
+  line-height: 24px;
+  padding: 0 0 0 15px;
+}
+.lottery_buy_wrap {
+  min-height: 450px;
+  padding: 0 0 90px 0;
+}
+.lottery_buy_wrap .periods_buy {
+  height: 34px;
+  line-height: 34px;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 0 0 0 10px;
+  font-weight: bold;
+}
+.lottery_buy_wrap .periods_buy span {
+  float: right;
+  font-weight: normal;
+  padding: 0 10px 0 0;
+  color: #e4393c;
+}
+.lottery_buy_wrap .random {
+  height: 52px;
+  background: #f2f2f2;
+  border-bottom: 1px solid #d2d2d2;
+}
+.lottery_buy_wrap .random input {
+  display: block;
+  margin: 11px 5%;
+  float: left;
+  width: 126px;
+  height: 30px;
+  border: 1px solid #d2d2d2;
+  background: #fff;
+}
+.lottery_buy_wrap .lottery_inventory li {
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #d2d2d2;
+  position: relative;
+}
+.lottery_buy_wrap .lottery_inventory .delbut {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 27px;
+  left: 15px;
+  background: url(../images/del_icon.png) no-repeat;
+  background-size: 100%;
+}
+.lottery_buy_wrap .lottery_inventory .inennum {
+  padding: 8px 0 0 50px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}
+.lottery_buy_wrap .lottery_inventory .inennum .redball {
+  color: #e4393c;
+}
+.lottery_buy_wrap .lottery_inventory .inennum .blueball {
+  color: #2d86ca;
+}
+.lottery_buy_wrap .lottery_inventory .lotteryinfo {
+  padding: 0 0 0 50px;
+  color: #999999;
+}
+.lottery_buy_wrap .lottery_inventory .invenarrow {
+  position: absolute;
+  top: 27px;
+  right: 10px;
+  width: 9px;
+  height: 17px;
+  background: url(../images/arrow_icon.png) no-repeat;
+  background-size: 100%;
+}
+.lottery_buy_wrap .buyagreement {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  padding: 0 0 0 10px;
+}
+.lottery_buy_wrap .buyagreement a {
+  color: #2d86ca;
+}
+.lottery_buy_wrap .buyagreement .delbut2 {
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  top: 8px;
+  right: 5px;
+  line-height: 24px;
+  /*padding: 0 0 0 15px;*/
+}
+.lottery_buy_wrap .buyagreement .delbut2 span {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 14px;
+  height: 17px;
+  background: url(../images/del.png) no-repeat;
+  background-size: 100%;
+}
+.lottery_buy_wrap .confirm_buy {
+  position: fixed;
+  width: 100%;
+  height: 87px;
+  border-top: 1px solid #d2d2d2;
+  left: 0;
+  bottom: 1px;
+  background: #fff;
+}
+.lottery_buy_wrap .confirm_buy .inpnum {
+  height: 37px;
+  text-align: center;
+}
+.lottery_buy_wrap .confirm_buy .inpnum .qnum1 {
+  float: left;
+  width: 50%;
+  border-right: 1px solid #d2d2d2;
+  height: 31px;
+  padding: 6px 0 0 0;
+}
+.lottery_buy_wrap .confirm_buy .inpnum .qnum2 {
+  float: right;
+  width: 49%;
+  height: 31px;
+  padding: 6px 0 0 0;
+}
+.lottery_buy_wrap .confirm_buy .inpnum input {
+  width: 60px;
+  height: 22px;
+  border: 1px solid #d2d2d2;
+  margin: 0 4px;
+}
+.lottery_buy_wrap .confirm_buy .confirmbut {
+  background:#e85859;
+  height: 40px;
+  border-top: 1px solid #d2d2d2;
+  padding: 9px 0 0 0;
+  text-align: center;
+}
+.lottery_buy_wrap .confirm_buy .confirmbut input {
+  width: 96%;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 auto;
+  background: #e4393c;
+  border: 1px solid #ce282b;
+  color: #ffffff;
+  font-size: 12px;
+}
+.zqtz .chooseracebut {
+  height: 62px;
+  border-bottom: 1px solid #d2d2d2;
+  background: #faf2cd;
+  padding: 16px 0 0 0;
+}
+.zqtz .chooseracebut input {
+  height: 30px;
+  border: 1px solid #d2d2d2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  color: #333333;
+  font-size: 14px;
+}
+.zqtz .confirm_buy .inpnum .qnum1 input {
+  width: 74%;
+  height: 26px;
+  border: 1px solid #d2d2d2;
+  background: #f5f5f5;
+}
+.zqtz li {
+  border-bottom: 1px solid #d2d2d2;
+  position: relative;
+  padding: 18px 0 15px 49px;
+}
+.zqtz li .delbut {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+/*.zqtz .delbut{
+  background: #f2f2f2;
+}*/
+.zqtz .delbut input {
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-left: -30px;
+  text-indent: -999px;
+  background: url(../image/del.png) no-repeat;
+  border: 0;
+  background-size: 100%;
+}
+.zqtz li .raceteam {
+  font-size: 14px;
+  height: 25px;
+  width: 75%;
+  text-align: center;
+}
+.zqtz li .raceteam i {
+  color: #339933;
+  padding: 0 2px;
+}
+.zqtz li .raceteam b {
+  color: #999999;
+  padding: 0;
+  font-weight: normal;
+  width: 29.9%;
+  display: inline-block;
+}
+.zqtz li .raceteam span {
+  width: 32.9%;
+  display: inline-block;
+}
+.zqtz li .racelist {
+  border: 1px solid #d2d2d2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  height: 30px;
+  width: 72%;
+  line-height: 30px;
+  color: #339933;
+  overflow: hidden;
+}
+.zqtz li .racelist span {
+  padding: 0 3px;
+}
+.zqtz li .racelist .shengf {
+  padding: 0 0 0 8px;
+}
+.zqtz li .racelist .bif {
+  padding: 0 0 0 8px;
+}
+.zqtz li .racelist input {
+  width: 100%;
+  height: 30px;
+  border: 0px solid #d2d2d2;
+  line-height: 30px;
+  background: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  color: #666666;
+}
+.zqtz li .racelist input.selected {
+  border: 1px solid #cf2c2f;
+  background: #e4393c;
+  color: #ffffff;
+}
+.zqtz li .racelist .gdtcla {
+  max-height: 90%;
+  overflow-y: auto;
+}
+.zqtz li .racelist .betting_options {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  left: 0%;
+  top: 6%;
+  z-index: 11;
+  display: none;
+  text-align: center;
+}
+.zqtz li .racelist .betting_options .optionshead {
+  height: 43px;
+  line-height: 43px;
+  text-align: center;
+  color: #333333;
+}
+.zqtz li .racelist .betting_options .optionslist {
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 0 0 0 18px;
+  position: relative;
+  overflow: hidden;
+  color: #666666;
+}
+.zqtz li .racelist .betting_options .optionslist .optionsname {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  padding: 0 0px;
+  height: 100%;
+  line-height: 12px;
+  background: #999;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  display: -o-box;
+  -o-box-orient: horizontal;
+  -o-box-pack: center;
+  -o-box-align: center;
+  display: -ms-box;
+  -ms-box-orient: horizontal;
+  -ms-box-pack: center;
+  -ms-box-align: center;
+  display: box;
+  box-orient: horizontal;
+  box-pack: center;
+  box-align: center;
+  color: #ffffff;
+  border-right: 1px solid #d2d2d2;
+}
+.zqtz li .racelist .betting_options .optionslist .greenbg {
+  background: #4cd964;
+}
+.zqtz li .racelist .betting_options .optionslist .orangebg {
+  background: #fe9c15;
+}
+.zqtz li .racelist .betting_options .optionslist .bluebg {
+  background: #159efe;
+}
+.zqtz li .racelist .betting_options .optionslist .redbg {
+  background: #eb6877;
+}
+.zqtz li .racelist .betting_options .optionslist .whitebg {
+  background: #fff;
+  color: #555555;
+}
+.zqtz li .racelist .betting_options .optionslist ul {
+  margin: 0 -1px -1px 0;
+}
+.zqtz li .racelist .betting_options .optionslist li {
+  width: 50%;
+  height: 45px;
+  float: left;
+}
+.zqtz li .racelist .betting_options .optionslist li.nobootleg {
+  width: 100%;
+  line-height: 45px;
+}
+.zqtz li .racelist .betting_options .optionslist .optname {
+  height: 45px;
+  line-height: 45px;
+  border-right: 1px solid #d2d2d2;
+  z-index: 2;
+  text-align: center;
+}
+.zqtz li .racelist .betting_options .optionslist li .curr {
+  background: #e4393c;
+  color: #ffffff;
+}
+.zqtz li .racelist .betting_options .optionslist ul.sfc li {
+  width: 33%;
+  height: 38px;
+  float: left;
+  padding: 0;
+}
+.zqtz li .racelist .betting_options .optionslist ul.sfc li .optname {
+  height: 32px;
+  line-height: 14px;
+  padding: 6px 0 0 0;
+}
+.zqtz li .racelist .betting_options .optionslist ul.sfc li span {
+  display: block;
+  color: #999999;
+}
+.zqtz li .racelist .betting_options .optionslist ul.sfc li .curr span {
+  color: #ffffff;
+}
+.zqtz li .racelist .betting_options .optionslist.jclist {
+  border: 0;
+}
+.zqtz li .racelist .betting_options .optionslist table {
+  background: #d2d2d2;
+  width: 100%;
+  font-weight: bold;
+}
+.zqtz li .racelist .betting_options .optionslist table span {
+  font-weight: normal;
+  padding: 0 0 0 3px;
+}
+.zqtz li .racelist .betting_options .optionslist table i {
+  font-weight: normal;
+  display: block;
+}
+.zqtz li .racelist .betting_options .optionslist td {
+  background: #fff;
+  height: 50px;
+}
+.zqtz li .racelist .betting_options .optionslist td.curr {
+  background: #e4393c;
+  color: #ffffff;
+}
+.zqtz li .racelist .betting_options .optionslist .zqwrap {
+  min-height: 30px;
+}
+.zqtz li .racelist .betting_options .optionslist .pre33 {
+  width: 33%;
+}
+.zqtz li .racelist .betting_options .optionslist .pre14 {
+  width: 14%;
+}
+.zqtz li .racelist .betting_options .optionslist .pre25 {
+  width: 25%;
+}
+.zqtz li .racelist .betting_options .padd {
+  margin: 15px 0 0 0;
+}
+.zqtz li .racelist .betting_options h6 {
+  text-align: left;
+  font-weight: normal;
+  line-height: 16px;
+  height: 16px;
+}
+.zqtz li .racelist .betting_options .waninfo {
+  padding: 15px 20px;
+  border-top: 1px solid #d2d2d2;
+  text-align: left;
+  color: #999999;
+}
+.zqtz li .racelist .betting_options .optionslist2 ul {
+  height: 46px;
+  border-top: 1px solid #d2d2d2;
+  background: #f2f2f2;
+  margin-left: -1px;
+}
+.zqtz li .racelist .betting_options .optionslist2 li {
+  width: 33%;
+  float: left;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-bottom: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2;
+  padding: 0;
+}
+.zqtz li .racelist .betting_options .optionslist2 li.curr {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+.zqtz li .racelist .betting_options .optionslist2 .tabcon {
+  padding: 12px 10px;
+  display: none;
+}
+.zqtz li .racelist .betting_options .optionslist2 .tabcon ul {
+  height: auto;
+  border-top: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.zqtz li .racelist .betting_options .optionslist2 .tabcon li {
+  width: 25%;
+  border-left: 0;
+  border-bottom: 0;
+  margin: 0;
+  height: 53px;
+  color: #666666;
+}
+.zqtz li .racelist .betting_options .optionslist2 .tabcon li div {
+  height: 42px;
+  padding: 10px 0 0 0;
+  line-height: 18px;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+}
+.zqtz li .racelist .betting_options .optionslist2 .tabcon li span {
+  display: block;
+  color: #999999;
+}
+.zqtz li .racelist .betting_options .optionslist2 .tabcon li.looqi {
+  width: 100%;
+}
+.zqtz li .racelist .betting_options .optionslist2 .tabcon li.curr {
+  background: #e4393c;
+  color: #ffffff;
+}
+.zqtz li .racelist .betting_options .optionslist2 .tabcon li.curr span {
+  color: #ffffff;
+}
+.zqtz li .racelist .betting_options .optionsbut {
+  padding: 55px 5% 20px 5%;
+  height: 30px;
+}
+.zqtz li .racelist .betting_options .optionsbut input {
+  display: block;
+  width: 48%;
+  height: 30px;
+  line-height: 30px;
+}
+.zqtz li .racelist .betting_options .optionsbut input.cancel {
+  border: 1px solid #d2d2d2;
+  background: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  color: #666666;
+  float: left;
+}
+.zqtz li .racelist .betting_options .optionsbut input.okbtn {
+  border: 1px solid #cf2c2f;
+  background: #e4393c;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  color: #ffffff;
+  float: right;
+}
+.zqtz li .racelist .mask2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  opacity: 0.8;
+  display: none;
+}
+.zqtz li .racelist2 {
+  width: 72%;
+  text-align: center;
+}
+.zqtz li .racelist2 .eventjzzjq {
+  width: 96%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  border-top: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2;
+  background: #f2f2f2;
+  height: 60px;
+  margin: 0 0 8px 0;
+  overflow: hidden;
+}
+.zqtz li .racelist2 .eventjzzjq .zjq {
+  width: 25%;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+}
+.zqtz li .racelist2 .eventjzzjq .zjq span {
+  font-weight: bold;
+  display: block;
+  height: 29px;
+  border-right: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+}
+.zqtz li .racelist2 .eventjzzjq .zjq i {
+  font-weight: normal;
+  padding: 0 0 0 3px;
+}
+.zqtz li .racelist2 .eventjzzjq .curr {
+  background: #e4393c;
+  color: #ffffff;
+}
+.zqtz li .racedan {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d2d2d2;
+  text-align: center;
+  line-height: 30px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  position: absolute;
+  top: 43px;
+  right: 30px;
+}
+.zqtz li .racedan.curr {
+  border: 1px solid #e4393c;
+  color: #e4393c;
+}
+.zqtz li .spf span {
+  display: inline-block;
+  width: 32.9%;
+  padding: 0;
+  text-align: center;
+  color: #333333;
+  height: 30px;
+  float: left;
+}
+.zqtz li .spf span i {
+  color: #339933;
+}
+.zqtz li .spf span.curr {
+  color: #ffffff;
+  background: #f00;
+}
+.zqtz li .spf span.curr i {
+  color: #ffffff;
+}
+.zqtz li .spf span.k_ping {
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+}
+.zqtz li span.k_sheng {
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  -ms-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+}
+.zqtz li span.k_fu {
+  -webkit-border-radius: 0px 2px 2px 0px;
+  -moz-border-radius: 0px 2px 2px 0px;
+  -ms-border-radius: 0px 2px 2px 0px;
+  border-radius: 0px 2px 2px 0px;
+}
+.guoguan {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 11;
+  display: none;
+}
+.guoguan ul {
+  height: 43px;
+}
+.guoguan li {
+  width: 50%;
+  height: 42px;
+  float: left;
+  text-align: center;
+  line-height: 42px;
+  font-size: 14px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.guoguan li.curr {
+  height: 41px;
+  border-bottom: 2px solid #e85859;
+  color: #e85859;
+}
+.guoguan .guoguancc {
+  padding: 14px 19px;
+  overflow: hidden;
+  display: none;
+}
+.guoguan .guoguancc span {
+  display: block;
+  width: 30%;
+  height: 36px;
+  border: 1px solid #d2d2d2;
+  float: left;
+  margin: 0 2.5% 2.5% 0;
+  text-align: center;
+  line-height: 36px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+}
+.guoguan .guoguancc span.curr {
+  border: 1px solid #e4393c;
+  color: #e4393c;
+}
+.guoguan .ggbut {
+  clear: both;
+  padding: 15px 0 0 0;
+}
+.guoguan .ggbut input {
+  width: 50%;
+  height: 36px;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #666666;
+}
+.guoguan .ggbut input.qued {
+  background: #e85859;
+  color: #ffffff;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  border-color: #e85859;
+}
+.guoguanmask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  display: none;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}

@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+.allorder_tabli {
+  height: 43px;
+}
+.allorder_tabli li {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.allorder_tabli li a {
+  display: block;
+  height: 42px;
+  border-bottom: 1px solid #d2d2d2;
+  line-height: 42px;
+  color: #333333;
+}
+.allorder_tabli li a.curr {
+  border-bottom: 1px solid #e4393c;
+  color: #e4393c;
+}
+.orderlist {
+  padding: 15px 0 1px 0;
+  background: #faf2cd;
+}
+.orderlist dl {
+  border: 1px solid #d2d2d2;
+  overflow: hidden;
+  margin: 0 0 15px 0;
+}
+.orderlist dt {
+  width: 16%;
+  float: left;
+  text-align: center;
+  font-size: 22px;
+}
+.orderlist dt span {
+  display: block;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.orderlist dt .ordertime {
+  height: 48px;
+  position: relative;
+  top: 50%;
+  /*margin: -24px 0 0 0;*/
+}
+.orderlist dd {
+  width: 84%;
+  float: left;
+  background: #fff;
+}
+.orderlist dd ul {
+  border-left: 1px solid #d2d2d2;
+}
+.orderlist dd li {
+  border-top: 1px solid #d2d2d2;
+  margin: -1px 0 0 0;
+  height: 63px;
+  position: relative;
+}
+.orderlist dd li div {
+  float: left;
+  width: 30%;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+.orderlist dd li .ordername {
+  font-size: 14px;
+}
+.orderlist dd li .ordername span {
+  display: block;
+}
+.orderlist dd li .ordername i {
+  display: block;
+  font-style:normal;
+  color: #e85859;
+}
+.orderlist dd li .orderinfo {
+  line-height: 20px;
+  color: #999999;
+  padding: 12px 0 0 0;
+}
+.orderlist dd li .orderinfo span {
+  display: block;
+}
+.orderlist dd li .orderinfo i {
+  display: block;
+  font-style:normal;
+}
+.orderlist dd li .ordermoney {
+  color: #e4393c;
+  line-height: 20px;
+  padding: 12px 0 0 0;
+}
+.orderlist dd li .ordermoney span {
+  display: block;
+}
+.orderlist dd li .ordermoney i {
+  display: block;
+  font-style:normal;
+}
+.orderlist dd li .orderarrow {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  width: 9px;
+  height: 17px;
+  background: url(../images/arrow_icon.png) no-repeat;
+  background-size: 100%;
+}
+
+
+/*jys*/
+.orderlist dd li p{
+  border-bottom:1px solid #d2d2d2;
+}
+.orderlist dd li p .green{
+  width:32%; 
+  height:31px; 
+  border:none; 
+  background-color:#55b5ad;
+  color:#fff;
+  font-weight:bold; 
+  -webkit-border-radius: 5px;-moz-border-radius: 5px;
+  -ms-border-radius: 5px; border-radius:5px;
+}
+.orderlist dd li p #val377{
+  display:inline-block;
+  width:32%; 
+  text-align:center;
+}
+.orderlist dd li p .red{
+  width:32%; 
+  height:31px; 
+  border:none; 
+  background-color:#e85859; 
+  color:#fff;  
+  font-weight:bold; 
+  -webkit-border-radius: 5px;-moz-border-radius: 5px;
+  -ms-border-radius: 5px; border-radius:5px;
+}

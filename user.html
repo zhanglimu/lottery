@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>用户中心</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href=" style/two.css">
+<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href=" style/select-list.css">
+<link rel="stylesheet" type="text/css" href=" style/user.css">
+
+<style type="text/css">
+html, body {background:#fff;;color:#000; font-family: "Microsoft YaHei";}
+
+#top{
+    text-align: center; font-size:18px;width: 100%;height:58px; line-height:58px;
+     color: #fff; background:#e85859; 
+}
+</style>
+
+<body>
+
+    <header id="top">
+        <a id="point" href="all_detail.html"><img style="float:left;width:20px; height:20px;margin:20px 0 0 20px;" src="image/refres.png"></a>
+        <span>个人中心</span>
+        <a id="pointe" href="#"><img style=" float:right;width:20px; height:20px;margin:20px 20px 0 0;" src="image/icon.png"></a>
+    </header>
+	<!--<article>
+			<div id="container" data-dialoginit="true"></div>
+			<input name="userid" id="userid" value="18518012239,281561" type="hidden">
+	<article> -->
+	<form name="form1" method="post" action="UserCenter.aspx" id="form1">
+		<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzg4MjExNjMxZGQz1NuKG3Gfhl5UQKtaM13aOJ0BdQ==" />
+    <article>
+	    <section class="recharge_wrap">
+		    <div class="userindexbox">
+			    <div class="namebox">
+				    <div class="username"><span><img class="head" src="image/head.jpg"></span><a href="#" id="userName">123456789</a></div>
+				    <div class="rechargebut_i"><a onClick="rechar()">我要充值</a></div>
+			    </div>
+			    <div class="infomoney">
+				    <ul>
+					    <li style="width:23.3%"><span>可用金额</span><b id="Balance">123</b></li>
+                        <li style="width:23.3%"><span>我的彩金</span><b id="MosaicMoney">456</b></li>
+					    <li style="width:23.3%"><span>冻结金额</span><b id="Freeze">789</b></li>
+					    <li><a href="Drawing.aspx">我要提款</a></li>
+				    </ul>
+			    </div>
+			    <div class="usermenu_one">
+				    <ul>
+					    <li>
+						    <span><img src="image/all_order.png" alt=""></span><a href="all_order.html">全部彩票订单</a>
+						    <div class="userarrow"></div>
+					    </li>
+					    <li>
+						    <span><img src="image/win_order.png" alt=""></span><a href="ykj_order.html">中奖订单</a>
+						    <div class="userarrow"></div>
+					    </li>
+					    <li>
+						    <span><img src="image/no_win_order.png" alt=""></span><a href="jys_order.html">可交易订单</a>
+						    <div class="userarrow"></div>
+					    </li>
+					    <li>
+						    <span><img src="image/hao.png" alt=""></span><a href="ybx_order.html">已变现订单</a>
+						    <div class="userarrow"></div>
+					    </li>
+					    <li>
+						    <span><img src="image/buy_up.png" alt=""></span><a href="ylp_order.html">已领票订单</a>
+						    <div class="userarrow"></div>
+					    </li>
+                         
+				    </ul>
+			    </div>
+			    <div class="moneymenu">
+				    <ul>
+					    <li>
+						    <span><img src="image/user_info.png" alt=""></span><a href="information.html">账户信息</a>
+						    <div class="userarrow"></div>
+					    </li>
+					    <li>
+						    <span><img src="image/user_detail.png" alt=""></span><a href="#" style=" display:block;">账户明细</a>
+						    <div class="userarrow"></div>
+					    </li>
+					    <li>
+						    <span><img src="image/hao.png" alt=""></span><a href="atm.html">提款状态</a>
+						    <div class="userarrow"></div>
+					    </li>
+				    </ul>
+			    </div>
+		    </div>
+	    </section>
+    </article>
+    <footer>
+	    <div class="foottel">客服热线：###########</div>
+	    <div class="footcopy">版权所有：深圳彩易科思网络技术有限公司北京分公司</div>
+    </footer>
+    <div id="container" data-dialoginit="true">
+    </form>
+</body>
+<script src="user/zepto.min.js" type="text/javascript"></script>
+<script src="user/EIMS.min.js" type="text/javascript"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        E.launch();
+        //ajax提交
+        $.ajax({
+            type: "post",
+            url: "../Ajax/UserCenterInterface.ashx",
+            data: {
+                opt: "3"
+            },
+            cache: false,
+            async: true,
+            dataType: "json",
+            success: function (result) {
+                if ("0" == result.error) {
+                    var data = result.Data[0];
+                    $("#userName").text(data.UserName);
+                    $("#Balance").text(data.Balance);
+                    $("#MosaicMoney").text(data.MosaicMoney);
+                    $("#Freeze").text(data.Freeze);
+                } else {
+                    E.showToast("获取用户信息失败", "50%", "error", "1000");
+                }
+            }, error: function (xmlHttpRequest, textStatus, errorThrown) {
+                E.showToast("您还没有登陆", "50%", "error", "1000");
+            }
+        });
+    }
+</script>
+<script >
+	function rechar(){
+		var a = window.confirm("您还未注册，是否要去注册呢");
+		// if(a==true)
+		// {alert('转向本层');}
+		// else
+		// {alert('转向上层');}
+	}
+</script>
+
+</html>
